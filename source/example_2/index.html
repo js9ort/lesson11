@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+	
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+	<!--jQuery & jQuery UI (JS + CSS)-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	
+  </head>
+  <body>
+		<div class="container">
+		<h1 class="my-5" style='margin: 32px 0;'>Работа с API "Нової пошти"</h1>
+			
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label for="city_from" class="col-xs-4 col-form-label form-control-label"><i class="fa fa-sign-out" aria-hidden="true"></i> Отправка из: </label>
+					<div class="col-xs-8">
+						<input class="form-control" id="city_from" placeholder="Введите город отправителя">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label for="city_to" class="col-xs-4 col-form-label form-control-label"><i class="fa fa-sign-in" aria-hidden="true"></i> Место назначения: </label>
+					<div class="col-xs-8">
+						<input class="form-control" id="city_to" placeholder="Введите город получателя">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+				  <label for="example-number-input" class="col-xs-4 col-form-label"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Вес (кг): </label>
+				  <div class="col-xs-8">
+					<input class="form-control" type="number" value="1" min="1" id="cargo_weight">
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+				  <label for="example-number-input" class="col-xs-4 col-form-label"><i class="fa fa-money" aria-hidden="true"></i> Стоимость (грн): </label>
+				  <div class="col-xs-8">
+					<input class="form-control" type="number" value="300" min="300" max="10000000" id="cargo_cost">
+				  </div>
+				</div>
+			</div>	
+					
+			<div class="col-md-12">
+				<button class="btn btn-info"><i class="fa fa-calculator" aria-hidden="true"></i> Расчитать</button>
+			</div>
+		</div>
+			<hr>
+			<h3>
+				Стоимость доставки: <span id="total_price"></span>
+			</h3> 		
+		</div>		
+  </body>
+</html>
+

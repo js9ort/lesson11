@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello DOM & Events</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+	
+	<style>
+	
+		.text-gray {
+			color: #bababa;
+		}
+	
+	</style>
+	
+  </head>
+  <body>
+    
+	<div class="container mt-5 mb-5">
+		<h1>Адресная книга</h1>	
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="form-group">
+			  <label>Поиск</label>
+			  <input type="text" class="form-control" id="search" placeholder="Поиск...">
+			</div>
+		  </div>
+		</div>
+		<div class="row border-bottom pb-2 mt-4">
+			<div class="col-3">
+				<strong>Имя</strong> 
+				<i class="fas fa-2x fa-sort-amount-up-alt text-gray"></i>
+			</div>
+			<div class="col-3"><strong>Телефон</strong></div>
+			<div class="col-3"><strong>Адрес</strong></div>
+		</div>
+		
+		<div class="cards">
+		
+			<!-- One Card -->
+			<div class="row border-bottom pb-2 mt-2">
+				<div class="col-3">Иван</div>
+				<div class="col-3">+380675558823</div>
+				<div class="col-3">London, United Kingdom</div>
+			</div>
+			<!-- /One Card -->
+
+		</div>
+		
+		<script>
+		
+		const _0x3049=['remove','input','location','querySelector','toLowerCase','map','click','country','sort','results','value','last','trim','phone','text-gray','addEventListener','name','target','json','filter','toggle','city','address','contains','.cards','visible','join','fa-sort-amount-up-alt','classList','cell','includes','forEach','</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-3\x22>','https://randomuser.me/api/?results=100','first','</div>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09','fa-sort-amount-down-alt'];(function(_0x4ceee1,_0xe97156){const _0x3fb5fc=function(_0x381d3a){while(--_0x381d3a){_0x4ceee1['push'](_0x4ceee1['shift']());}};_0x3fb5fc(++_0xe97156);}(_0x3049,0x7e));const _0x466f=function(_0x4ceee1,_0xe97156){_0x4ceee1=_0x4ceee1-0x0;let _0x3fb5fc=_0x3049[_0x4ceee1];return _0x3fb5fc;};(async()=>{let _0x110663=_0x466f('0x12');let _0x9e5896=await fetch(_0x110663);_0x9e5896=await _0x9e5896[_0x466f('0x3')]();_0x9e5896=_0x9e5896[_0x466f('0x1f')];let _0x227c6c=_0x9e5896[_0x466f('0x1b')](_0x293c69=>({'name':(_0x293c69[_0x466f('0x1')][_0x466f('0x13')]+'\x20'+_0x293c69['name'][_0x466f('0x21')])['trim'](),'phone':_0x293c69[_0x466f('0xe')],'address':_0x293c69[_0x466f('0x18')][_0x466f('0x6')]+',\x20'+_0x293c69[_0x466f('0x18')][_0x466f('0x1d')],'visible':!![]}));function _0x3185fb(){document[_0x466f('0x19')](_0x466f('0x9'))['innerHTML']=_0x227c6c[_0x466f('0x4')](_0x1cfc2c=>_0x1cfc2c[_0x466f('0xa')])[_0x466f('0x1b')](_0x272693=>'\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22row\x20border-bottom\x20pb-2\x20mt-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-3\x22>'+_0x272693['name']+'</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-3\x22>'+_0x272693[_0x466f('0x23')]+_0x466f('0x11')+_0x272693[_0x466f('0x7')]+_0x466f('0x14'))[_0x466f('0xb')]('');}_0x3185fb();document[_0x466f('0x19')](_0x466f('0x17'))[_0x466f('0x0')](_0x466f('0x17'),function(_0x4c2980){let _0x3c1733=_0x4c2980[_0x466f('0x2')][_0x466f('0x20')][_0x466f('0x22')]()[_0x466f('0x1a')]();_0x227c6c[_0x466f('0x10')](_0x18b69d=>{_0x18b69d[_0x466f('0xa')]=_0x18b69d[_0x466f('0x1')]['toLowerCase']()[_0x466f('0xf')](_0x3c1733);});_0x3185fb();});document['querySelector']('i')[_0x466f('0x0')](_0x466f('0x1c'),function(_0x3be0ff){this[_0x466f('0xd')][_0x466f('0x16')](_0x466f('0x24'));this['classList'][_0x466f('0x5')]('fa-sort-amount-up-alt');this['classList'][_0x466f('0x5')](_0x466f('0x15'));if(this[_0x466f('0xd')][_0x466f('0x8')](_0x466f('0xc'))){_0x227c6c[_0x466f('0x1e')]((_0x3c350f,_0x530dd0)=>_0x3c350f[_0x466f('0x1')]>_0x530dd0['name']?0x1:_0x3c350f[_0x466f('0x1')]<_0x530dd0[_0x466f('0x1')]?-0x1:0x0);}else{_0x227c6c[_0x466f('0x1e')]((_0x489794,_0x4618c6)=>_0x489794[_0x466f('0x1')]>_0x4618c6[_0x466f('0x1')]?-0x1:_0x489794[_0x466f('0x1')]<_0x4618c6[_0x466f('0x1')]?0x1:0x0);}_0x3185fb();});})();
+		
+		</script>
+		
+	</div>
+  </body>
+</html>
